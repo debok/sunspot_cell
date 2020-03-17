@@ -1,4 +1,5 @@
 require 'sunspot/rich_document'
+RSolr::Document.send(:include, Sunspot::RichDocument)
 require 'sunspot_cell/dsl/fields'
 Sunspot::DSL::Fields.send(:include, SunspotCell::DSL::Fields)
 require 'sunspot_cell/dsl/standard_query'
