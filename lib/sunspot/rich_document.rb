@@ -41,8 +41,7 @@ module Sunspot
             'update/extract',
             method: :post,
             params: params,
-            data: data,
-            headers: {"Content-Type" => ""}
+            data: data
           )
         end
       end
